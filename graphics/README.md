@@ -6,4 +6,4 @@
 
 ![alt text][poster]
 
-[poster]: poster-book.png "Poster"
+[poster2]: pposter-history.png "Poster"
