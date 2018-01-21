@@ -1,4 +1,4 @@
 ## Examples of UI, games, web design
 
-![][logo]
+![alt text][logo]
 [logo]: poster-book.png "Poster"
