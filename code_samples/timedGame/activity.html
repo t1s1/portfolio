@@ -1,0 +1,824 @@
+<!doctype HTML>
+<head>
+<style>
+  body {
+    background: #222;
+  }
+
+  #timedGame1 {
+    position: relative;
+    margin: 50px auto;
+    width: 1000px;
+    height: 460px;
+    border: 1px solid #444;
+    background: #fff;
+    overflow: hidden;
+  }
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+</head>
+<body>
+<div id="timedGame1"></div>
+<script>
+  var queryStringDecoded = 'path=./&asset[@id]=timedGame1&asset[@left]=0&asset[@top]=0&asset[@width]=1000&asset[@height]=430&asset[@time_per_level]=10&asset[@path]=./&asset[configuration][@cut_score]=60&asset[configuration][@score_per_correct]=1&asset[configuration][@time_per_level]=8&asset[configuration][intro][@id]=TimedGame_intro&asset[configuration][instructions][@id]=TimedGame_instructions&asset[configuration][timer][@id]=TimedGame_timer&asset[configuration][score_text][@id]=TimedGame_score&asset[configuration][tryAgain][textbox][@id]=TimedGame_tryAgain&asset[configuration][tryAgain][image][@id]=TimedGame_tryAgain_arrow&asset[configuration][start][textbox][@id]=TimedGame_continue&asset[configuration][start][image][@id]=TimedGame_Begin&asset[configuration][results][textbox][@id]=TimedGame_plaqueTitle&asset[configuration][results][image][@id]=TimedGame_die&asset[configuration][results_correct][@id]=TimedGame_win&asset[configuration][results_correct_1][@id]=TimedGame_winPlaque&asset[configuration][results_incorrect][@id]=TimedGame_lose&asset[configuration][results_incorrect_1][textbox][0][@id]=TimedGame_losePlaque1&asset[configuration][results_incorrect_1][textbox][1][@id]=TimedGame_losePlaque1_name&asset[configuration][results_incorrect_1][image][@id]=TimedGame_Carla&asset[configuration][results_incorrect_2][textbox][0][@id]=TimedGame_losePlaque2&asset[configuration][results_incorrect_2][textbox][1][@id]=TimedGame_losePlaque2_name&asset[configuration][results_incorrect_2][image][@id]=TimedGame_Jin&asset[configuration][results_incorrect_3][textbox][0][@id]=TimedGame_losePlaque3&asset[configuration][results_incorrect_3][textbox][1][@id]=TimedGame_losePlaque3_name&asset[configuration][results_incorrect_3][image][@id]=TimedGame_Steve&asset[configuration][set_1][@question]=TimedGame_set1_question&asset[configuration][set_1][@answer_1]=TimedGame_set1_answer_A&asset[configuration][set_1][@answer_2]=TimedGame_set1_answer_B&asset[configuration][set_1][@answer_3]=TimedGame_set1_answer_C&asset[configuration][set_1][@correct_answer]=answer_1&asset[configuration][set_2][@question]=TimedGame_set2_question&asset[configuration][set_2][@answer_1]=TimedGame_set2_answer_A&asset[configuration][set_2][@answer_2]=TimedGame_set2_answer_B&asset[configuration][set_2][@answer_3]=TimedGame_set2_answer_C&asset[configuration][set_2][@correct_answer]=answer_3&asset[configuration][set_3][@question]=TimedGame_set3_question&asset[configuration][set_3][@answer_1]=TimedGame_set3_answer_A&asset[configuration][set_3][@answer_2]=TimedGame_set3_answer_B&asset[configuration][set_3][@answer_3]=TimedGame_set3_answer_C&asset[configuration][set_3][@correct_answer]=answer_3&asset[configuration][set_4][@question]=TimedGame_set4_question&asset[configuration][set_4][@answer_1]=TimedGame_set4_answer_A&asset[configuration][set_4][@answer_2]=TimedGame_set4_answer_B&asset[configuration][set_4][@answer_3]=TimedGame_set4_answer_C&asset[configuration][set_4][@correct_answer]=answer_2&asset[configuration][set_5][@question]=TimedGame_set5_question&asset[configuration][set_5][@answer_1]=TimedGame_set5_answer_A&asset[configuration][set_5][@answer_2]=TimedGame_set5_answer_B&asset[configuration][set_5][@answer_3]=TimedGame_set5_answer_C&asset[configuration][set_5][@correct_answer]=answer_1&asset[configuration][set_6][@question]=TimedGame_set6_question&asset[configuration][set_6][@answer_1]=TimedGame_set6_answer_A&asset[configuration][set_6][@answer_2]=TimedGame_set6_answer_B&asset[configuration][set_6][@answer_3]=TimedGame_set6_answer_C&asset[configuration][set_6][@correct_answer]=answer_3&textboxContent[TimedGame_instructions]=Identify who said the following quotes before time runs out.&textboxContent[TimedGame_win]=Congratulations!&textboxContent[TimedGame_winPlaque]=YOU!&textboxContent[TimedGame_lose]=Nice try.&textboxContent[TimedGame_score]=Score&textboxContent[TimedGame_tryAgain]=Try Again&textboxContent[TimedGame_continue]=begin&textboxContent[TimedGame_plaqueTitle]=WINNER&textboxContent[TimedGame_losePlaque1]=Sorry - Henry beat you this time. Try again.&textboxContent[TimedGame_losePlaque1_name]=Henry&textboxContent[TimedGame_losePlaque2]=Sorry - Mr. Piddles is better than you. Give it another shot.&textboxContent[TimedGame_losePlaque2_name]=Mr. Piddles&textboxContent[TimedGame_losePlaque3]=Sorry - You are not as good as this guy.&textboxContent[TimedGame_losePlaque3_name]=Elvis&textboxContent[TimedGame_set1_question]=To the man who only has a hammer, everything he encounters begins to look like a nail.&textboxContent[TimedGame_set1_answer_A]=Abraham Maslow&textboxContent[TimedGame_set1_answer_B]=Albert Einstein&textboxContent[TimedGame_set1_answer_C]=Abraham Lincoln&textboxContent[TimedGame_set2_question]=Sometimes I worry about being a success in a mediocre world.&textboxContent[TimedGame_set2_answer_A]=George Carlin&textboxContent[TimedGame_set2_answer_B]=P. T. Barnum&textboxContent[TimedGame_set2_answer_C]=Lily Tomlin&textboxContent[TimedGame_set3_question]=Beauty is only skin deep, but ugly goes clean to the bone.&textboxContent[TimedGame_set3_answer_A]=Oscar Wilde&textboxContent[TimedGame_set3_answer_B]=Winston Churchill&textboxContent[TimedGame_set3_answer_C]=Dorothy Parker&textboxContent[TimedGame_set4_question]=You miss 100%25 of the shots you don\'t take.&textboxContent[TimedGame_set4_answer_A]=Michael Jordan&textboxContent[TimedGame_set4_answer_B]=Wayne Gretzky&textboxContent[TimedGame_set4_answer_C]=Kareem Abdul-Jabbar&textboxContent[TimedGame_set5_question]=The journey of a thousand miles begins with one step.&textboxContent[TimedGame_set5_answer_A]=Lao Tzu&textboxContent[TimedGame_set5_answer_B]=Confucius&textboxContent[TimedGame_set5_answer_C]=J. R. R. Tolkien&textboxContent[TimedGame_set6_question]=Everything should be kept as simple as possible, but no simpler.&textboxContent[TimedGame_set6_answer_A]=Albert Einstein&textboxContent[TimedGame_set6_answer_B]=Steve Jobs&textboxContent[TimedGame_set6_answer_C]=Bill Nye&textboxContent[TimedGame_intro]=<p>Match some famous (and not-so-famous) quotations with their authors.</p><p>When you see a quotation, click on the author of that quotation.</p><p>Your goal is to get at least 4 out of 6.</p><p>Click %22begin%22 to begin.</p>&textboxContent[TimedGame_instructions]=Click on the author of the quote before time runs out.&imageContent[Start_swirl]=../images/start_swirl.png&imageContent[End_swirl]=../images/end_swirl.png&imageContent[screen2_die]=images/dieBreakAway.png&imageContent[screen3_die]=images/leftDie.png&imageContent[screen3_image1_1]=images/turboBoost.jpg&imageContent[screen3_image2_1]=images/HTT.jpg&imageContent[screen3_image3_1]=images/HD.jpg&imageContent[screen3_image4_1]=images/WiDi.jpg&imageContent[screen3_image5_1]=images/clearVideo.jpg&imageContent[screen3_image6_1]=images/3D.jpg&imageContent[screen3_image7_1]=images/quickSync.jpg&imageContent[screen3_image8_1]=images/AVE.jpg&imageContent[screen3_image1_2]=images/turboBoost.jpg&imageContent[screen3_image2_2]=images/HTT.jpg&imageContent[screen3_image3_2]=images/HD.jpg&imageContent[screen3_image4_2]=images/WiDi.jpg&imageContent[screen3_image5_2]=images/clearVideo.jpg&imageContent[screen3_image6_2]=images/3D.jpg&imageContent[screen3_image7_2]=images/quickSync.jpg&imageContent[screen3_image8_2]=images/AVE.jpg&imageContent[screen3_image1_visited]=images/turboBoost_visited.jpg&imageContent[screen3_image2_visited]=images/HTT_visited.jpg&imageContent[screen3_image3_visited]=images/HD_visited.jpg&imageContent[screen3_image4_visited]=images/WiDi_visited.jpg&imageContent[screen3_image5_visited]=images/clearVideo_visited.jpg&imageContent[screen3_image6_visited]=images/3D_visited.jpg&imageContent[screen3_image7_visited]=images/quickSync_visited.jpg&imageContent[screen3_image8_visited]=images/AVE_visited.jpg&imageContent[TimedGame_Carla]=images/TimedGame_Carla.jpg&imageContent[TimedGame_Jin]=images/TimedGame_Jin.jpg&imageContent[TimedGame_Steve]=images/TimedGame_Steve.jpg&imageContent[TimedGame_Begin]=images/TimedGame-begin-arrow.gif&imageContent[TimedGame_tryAgain_arrow]=images/TimedGame-tryAgain-arrow.gif&imageContent[TimedGame_timer]=images/TimedGame-timerCircle.gif&imageContent[TimedGame_die]=images/winDie_TimedGame.jpg';
+
+  // adapted from http://7php.com
+  function getQueryParams(str) {
+
+    var pairs = str.split("&");
+    var keyValue_Collection = {};
+
+    for (var value in pairs) {
+      //let's get the position of the first occurrence of "=", in case value has "=" in it
+      var equalsignPosition = pairs[value].indexOf("=");
+
+      //in case there's only the key
+      if (equalsignPosition == -1) {
+        keyValue_Collection[pairs[value]] = ''; //you could change the value to true as per your needs
+      }
+      else {
+        keyValue_Collection[pairs[value].substring(0, equalsignPosition)] = pairs[value].substr(equalsignPosition + 1);
+      }
+    }
+    return keyValue_Collection;
+  }
+
+
+  /*************** TIMED GAME ****************/
+
+  function timedGame(queryObj) {
+    var id;
+    var $gameContainer;
+    var $score, $scorePlus;
+    var timer;
+    var gameConfigObj;
+    var cutScore = 60; // percent
+    var levelScore = 1;
+    var totalScore = 0;
+    var introText = "PLAY"; // just a default, should be replaced by text from xml
+    var timePerLevel = 10; // seconds
+    var gated = false; // prevent forward navigation in CHUTE (default is allow)
+    var activityObj = getAttributesAndConfiguration(queryObj);
+    var imagesContent = getContent(queryObj, 'imageContent');
+    var textboxesContent = getContent(queryObj, 'textboxContent');
+    var pathToThis = queryObj.path;
+    var numIncorrectFeedbacks = 0;
+    var numSets = 0;
+    var font = 'Tahoma';
+    var introCSS = {
+      'position': 'absolute',
+      'left': '1000px', // animates to 84px
+      'top': '60px',
+      'width': '834px',
+      'height': '340px',
+      'font-family': font,
+      'font-size': '22px',
+      'line-height': '34px',
+      'color': '#444',
+      'opacity': '0'
+    };
+    var startBtnCSS = {
+      'position': 'absolute',
+      'right': '0',
+      'top': '308px',
+      'width': '180px',
+      'height': '28px',
+      'font-family': font,
+      'text-align': 'right',
+      'padding-right': '60px',
+      'font-size': '22px',
+      'line-height': '28px',
+      'color': '#006266',
+      'cursor': 'pointer'
+    };
+    var startBtnImgCSS = {
+      'position': 'absolute',
+      'right': '0',
+      'top': '2px',
+      'width': '40px',
+      'height': '28px'
+    };
+    var instructionsCSS = {
+      'position': 'absolute',
+      'left': '18px',
+      'top': '30px',
+      'width': '710px',
+      'height': '60px',
+      'font-family': font,
+      'text-align': 'left',
+      'font-size': '14px',
+      'line-height': '18px',
+      'color': '#444'
+    };
+    var timerCSS = {
+      'position': 'absolute',
+      'left': '360px',
+      'top': '24px',
+      'height': '28px',
+      'width': '600px',
+    };
+    var timerCircleCSS_ON = {
+      'float': 'right',
+      'width': '40px',
+      'height': '28px',
+      'background-position': '0 0'
+    };
+    var timerCircleCSS_OFF = {
+      'background-position': '0 28px'
+    };
+    var scoreCSS = {
+      'position': 'absolute',
+      'left': '700px',
+      'top': '414px',
+      'width': '200px',
+      'height': '28px',
+      'font-family': font,
+      'text-align': 'right',
+      'font-size': '22px',
+      'line-height': '28px',
+      'color': '#8f8f8f'
+    };
+    var scorePlusCSS = {
+      'position': 'absolute',
+      'left': '910px',
+      'top': '414px',
+      'width': '200px',
+      'height': '28px',
+      'font-family': font,
+      'text-align': 'left',
+      'font-size': '22px',
+      'line-height': '28px',
+      'color': '#8f8f8f'
+    };
+    var questionCSS = {
+      'position': 'absolute',
+      'left': '1000px', // animates to 30px
+      'top': '180px',
+      'width': '400px',
+      'height': '290px',
+      'font-family': font,
+      'text-align': 'left',
+      'padding-right': '60px',
+      'font-size': '22px',
+      'line-height': '30px',
+      'color': '#444',
+      'opacity': '0'
+    };
+    var answerCSS = {
+      'position': 'absolute',
+      'left': '-500px', // animates to 516px
+      'top': '180px',
+      'width': '436px',
+      'height': '204px',
+      'opacity': '0'
+    };
+    var answerBlockCSS = {
+      'position': 'relative',
+      'margin-bottom': '18px',
+      'width': '436px',
+      'height': '56px',
+      'text-align': 'center',
+      'font-family': font,
+      'font-size': '22px',
+      'line-height': '56px',
+      'color': '#000',
+      'cursor': 'pointer'
+    };
+    var answerBlock_Indigo = '#e9e1ac';
+    var answerBlock_Blue = '#e6a73f';
+    var answerBlock_Green = '#00aa8f';
+    var feedbackCSS = {
+      'position': 'absolute',
+      'left': '1000px', // animates to 506px
+      'top': '90px',
+      'width': '508px',
+      'height': '220px',
+      'padding-left': '46px',
+      'padding-top': '16px',
+      'font-family': font,
+      'text-align': 'left',
+      'padding-right': '60px',
+      'font-size': '28px',
+      'line-height': '34px',
+      'color': '#fff',
+      'opacity': '0'
+    };
+    var feedbackSalespersonCSS = {
+      'position': 'absolute',
+      'left': '-200px', // animates to 98px
+      'top': '40px',
+      'width': '204px',
+      'height': '372px',
+      'opacity': '0'
+    };
+    var feedbackSalespersonTitleCSS = {
+      'position': 'absolute',
+      'left': '0',
+      'top': '0',
+      'width': '204px',
+      'height': '56px',
+      'font-family': font,
+      'text-align': 'center',
+      'font-size': '22px',
+      'line-height': '28px',
+      'color': '#006266'
+    };
+    var feedbackSalespersonWhoCSS = {
+      'position': 'absolute',
+      'left': '0',
+      'top': '56px',
+      'width': '204px',
+      'height': '268px',
+      'font-family': font,
+      'text-align': 'center',
+      'font-size': '72px',
+      'line-height': '160px',
+      'color': '#444'
+    };
+    var feedbackSalespersonNameCSS = {
+      'position': 'absolute',
+      'left': '0',
+      'top': '324px',
+      'width': '204px',
+      'height': '48px',
+      'font-family': font,
+      'text-align': 'center',
+      'font-size': '22px',
+      'line-height': '48px',
+      'color': '#444'
+    };
+    var feedbackIncorrectSpecificCSS = {
+      'position': 'absolute',
+      'left': '46px',
+      'top': '72px',
+      'width': '310px',
+      'height': '104px',
+      'font-family': font,
+      'text-align': 'left',
+      'font-size': '22px',
+      'line-height': '26px',
+      'color': '#fff'
+    };
+    var tryAgainCSS = {
+      'position': 'absolute',
+      'left': '440px',
+      'top': '365px',
+      'width': '294px',
+      'height': '36px',
+      'font-family': font,
+      'text-align': 'right',
+      'padding-right': '60px',
+      'font-size': '28px',
+      'line-height': '34px',
+      'color': '#006266',
+      'cursor': 'pointer'
+    };
+
+
+    function createElement($container, id) {
+      if ($('#' + id).length > 0) {
+        return $('#' + id);
+      }
+      else {
+        return $('<div id="' + id + '"></div>').appendTo($container);
+      }
+    }
+
+    function extractObjectFromString(obj, str, value) {
+      var subParam;
+      var openBracketIndex = str.indexOf('[') + 1;
+      var closeBracketIndex = str.indexOf(']');
+      var param = str.slice(openBracketIndex, closeBracketIndex);
+      var stringToEnd = str.slice(closeBracketIndex + 1);
+
+      // is there another level beyond this one?
+      if (str.charAt(closeBracketIndex + 1) === '[') {
+        subParam = stringToEnd.slice(stringToEnd.indexOf('[') + 1, stringToEnd.indexOf(']'));
+        if (obj[param] === undefined) {
+          obj[param] = {};
+        }
+        obj[param][subParam] = extractObjectFromString(obj[param], stringToEnd, value);
+      }
+      else {
+        obj[param] = value;
+      }
+      return obj[param];
+    }
+    // get all of the attributes and configuration object
+    function getAttributesAndConfiguration(obj) {
+      var activityAssetObj = {};
+      var param, openBracketIndex, closeBracketIndex, stringToEnd;
+
+      // get assets
+      for (var prop in obj) {
+        if (prop.indexOf('asset') !== -1) {
+          openBracketIndex = prop.indexOf('[') + 1;
+          closeBracketIndex = prop.indexOf(']');
+          stringToEnd = prop.slice(closeBracketIndex + 1);
+
+          param = prop.slice(openBracketIndex, closeBracketIndex);
+          // is there another level beyond this one?
+          if (prop.charAt(closeBracketIndex + 1) === '[') {
+            subParam = stringToEnd.slice(stringToEnd.indexOf('[') + 1, stringToEnd.indexOf(']'));
+            if (activityAssetObj[param] === undefined) {
+              activityAssetObj[param] = {};
+            }
+            activityAssetObj[param][subParam] = extractObjectFromString(activityAssetObj[param], stringToEnd, obj[prop]);
+          }
+          else {
+            activityAssetObj[param] = obj[prop];
+          }
+        }
+      }
+      return activityAssetObj;
+    }
+
+    // get content object from JSON
+    function getContent(obj, contentType) {
+      var contentObj = {};
+      var param, openBracketIndex, closeBracketIndex;
+
+      for (var prop in obj) {
+        if (prop.indexOf(contentType) !== -1) {
+          openBracketIndex = prop.indexOf('[') + 1;
+          closeBracketIndex = prop.indexOf(']');
+          param = prop.slice(openBracketIndex, closeBracketIndex);
+          console.log(obj[prop]);
+          contentObj[param] = decodeURIComponent(obj[prop]);
+        }
+      }
+      return contentObj;
+    }
+
+    // set up property for given property name
+    function setConfigObjProp(propName) {
+      var attribute;
+
+      function findContentById(val) {
+        // check textboxes
+        for (var prop in textboxesContent) {
+          if (prop === val) {
+            return textboxesContent[prop];
+          }
+        }
+        // check images
+        for (var prop in imagesContent) {
+          if (prop === val) {
+            // return the path plus the source
+            return pathToThis + imagesContent[prop];
+          }
+        }
+        // if nothing found, and it's an object
+        if (typeof val === 'object') {
+          // recurse
+          for (var attrName in val) {
+            attribute = attrName.slice(attrName.indexOf('@') + 1);
+            val[attribute] = findContentById(val[attrName]);
+          }
+        }
+        // or else just return the value that was there
+        return val;
+      }
+
+      if (gameConfigObj[propName] !== undefined) {
+        for (var attrName in gameConfigObj[propName]) {
+          attribute = attrName.slice(attrName.indexOf('@') + 1);
+
+          if (gameConfigObj[propName] === undefined) {
+            gameConfigObj[propName] = {};
+          }
+          gameConfigObj[propName][attribute] = findContentById(gameConfigObj[propName][attrName]);
+        }
+      }
+      return gameConfigObj;
+    }
+
+    /* 
+     * shows results at end of set (level)
+     */
+    function showResults() {
+      var percentScore = 100 * totalScore / (numSets * levelScore);
+      var $feedback,
+          $tryAgain,
+          $feedbackSalesperson,
+          $feedbackSalesperson_title,
+          $feedbackSalesperson_who,
+          $feedbackSalesperson_name,
+          $incorrectSpecific;
+
+      function showElements() {
+        $feedback.show();
+        $feedbackSalesperson.show();
+        $feedbackSalesperson.animate({
+          'left': '98px',
+          'opacity': '1.0'
+        }, 'slow', 'swing');
+        $feedback.animate({
+          'left': '506px',
+          'opacity': '1.0'
+        }, 'slow', 'swing');
+      }
+
+      function hideElements() {
+        $feedbackSalesperson.animate({
+          'left': '-400px',
+          'opacity': '0'
+        }, 'swing', function () {
+          $(this).hide();
+          $(this).empty();
+        });
+        $feedback.animate({
+          'left': '1000px',
+          'opacity': '0'
+        }, 'swing', function () {
+          $(this).hide();
+          $(this).empty();
+          $tryAgain.hide();
+          $score.hide();
+          reset();
+        });
+      }
+
+      function showCorrectFeedback() {
+        /* not relevant for stand-alone demo
+        // allow navigation forward if gated
+        var metadata = vm.CurrentLesson().CurrentScreen().MetaData();
+        if (gated) {
+          // hack
+          if (metadata.events === undefined) {
+            metadata['events'] = [];
+          }
+          if (metadata.events.click === undefined) {
+            metadata.events['click'] = [];
+          }
+          if (metadata.events.click[0] === undefined) {
+            metadata['events']['click'][0] = ['@id'];
+            metadata['events']['click'][0]['@id'] = id;
+          }
+          vm.CurrentLesson().CurrentScreen().CanMoveNext(true);
+        }
+        */
+
+        // "plaque" at left with salesperson
+        $feedbackSalesperson = createElement($gameContainer, id + '_correct');
+        // empty in case this is not the first time
+        $feedbackSalesperson.empty();
+        $feedbackSalesperson.css(feedbackSalespersonCSS);
+        $feedbackSalesperson_title = $('<div id="' + id + '_feedback_title"></div>').appendTo($feedbackSalesperson);
+        $feedbackSalesperson_title.html(gameConfigObj.results.textbox.id);
+        $feedbackSalesperson_title.css(feedbackSalespersonTitleCSS);
+        $feedbackSalesperson_who = $('<div id="' + id + '_feedback_title"></div>').appendTo($feedbackSalesperson);
+        $feedbackSalesperson_who.html(gameConfigObj.results_correct_1.id);
+        $feedbackSalesperson_who.css(feedbackSalespersonWhoCSS);
+        $feedbackSalesperson.show();
+
+        // text on die
+        // "congratulations" text
+        $feedback.html(gameConfigObj.results_correct.id);
+      }
+
+      function showIncorrectFeedback() {
+        var objToShow;
+
+        // choose one of the incorrect choices at random
+        objToShow = gameConfigObj['results_incorrect_' + ((Math.floor(Math.random() * numIncorrectFeedbacks)) + 1)];
+        
+        // "plaque" at left with salesperson
+        $feedbackSalesperson = createElement($gameContainer, id + '_incorrect');
+        // empty in case this is not the first time
+        $feedbackSalesperson.empty();
+        $feedbackSalesperson.css(feedbackSalespersonCSS);
+        $feedbackSalesperson_title = $('<div id="' + id + '_feedback_title"></div>').appendTo($feedbackSalesperson);
+        $feedbackSalesperson_title.html(gameConfigObj.results.textbox.id);
+        $feedbackSalesperson_title.css(feedbackSalespersonTitleCSS);
+        $feedbackSalesperson_who = $('<img src="' + objToShow.image.id + '"/>').appendTo($feedbackSalesperson);
+        $feedbackSalesperson_who.css(feedbackSalespersonWhoCSS);
+        $feedbackSalesperson_name = $('<div id="' + id + '_feedback_name"></div>').appendTo($feedbackSalesperson);
+        $feedbackSalesperson_name.html(objToShow.textbox[1].id);
+        $feedbackSalesperson_name.css(feedbackSalespersonNameCSS);
+
+        // text on die
+        // "sorry" text
+        $feedback.html(gameConfigObj.results_incorrect.id);
+        // this salesperson beat you
+        $incorrectSpecific = createElement($feedback, id + '_incorrectSpecific');
+        $incorrectSpecific.html(objToShow.textbox[0].id);
+        $incorrectSpecific.css(feedbackIncorrectSpecificCSS);
+        $incorrectSpecific.show();
+
+        // Try Again button
+        $tryAgain = createElement($gameContainer, id + '_tryAgain');
+        $tryAgain.html(gameConfigObj.tryAgain.textbox.id);
+        $tryAgain.css(tryAgainCSS);
+        $tryAgain.css('background', 'url("' + gameConfigObj.tryAgain.image.id + '") 320px 0 no-repeat');
+        $tryAgain.show();
+        $tryAgain.off('click'); // clear any old click handlers
+        $tryAgain.click({}, function (e) {
+          hideElements();
+        });
+      }
+
+      // container for feedback, good or bad
+      $feedback = createElement($gameContainer, id + '_feedback');
+      $feedback.css(feedbackCSS);
+      $feedback.css('background', 'url("' + gameConfigObj.results.image.id + '") no-repeat');
+      $feedback.html(gameConfigObj.results.textbox.id);
+
+      // show appropriate feedback
+      if (percentScore >= cutScore) {
+        showCorrectFeedback();
+      }
+      else {
+        showIncorrectFeedback();
+      }
+
+      showElements();
+    }
+
+    /* 
+     * main game loop
+     */
+    function play() {
+      var setNum = 1;
+      var timerCount = 0;
+      var questionDivId = id + '_question';
+      var answerDivId = id + '_answers';
+      var $question, $answerDiv, $instructions, $timer;
+      var timerCircles = [];
+
+      function updateScore(scoreToAdd) {
+        totalScore += scoreToAdd;
+        // fade in and out points
+        if (scoreToAdd > 0) {
+          $scorePlus.html('+ ' + scoreToAdd);
+          $scorePlus.fadeIn('fast', function () {
+            // Animation complete
+            $(this).fadeOut('slow');
+          });
+        }
+        
+        $score.html(gameConfigObj.score_text.id + ': ' + totalScore);
+      }
+
+      function countDown() {
+        if (timerCount === timePerLevel) {
+          // start with new set
+          clearInterval(timer);
+          setNum++;
+          clearAndReset();
+        }
+        else {
+          timerCircles[timerCount].css(timerCircleCSS_OFF);
+          timerCount++;
+        }
+      }
+
+      // clear and park question and answers, showSet() when done
+      function clearAndReset() {
+        $question.animate({
+          'left': '-400px',
+          'opacity': '0'
+        }, 'swing', function () {
+          $(this).hide();
+          $(this).empty();
+        });
+        $answerDiv.animate({
+          'left': '1000px',
+          'opacity': '0'
+        }, 'swing', function () {
+          $(this).hide();
+          $(this).empty();
+          // ready to go
+          showSet();
+        });
+      }
+
+      function showSet() {
+        var answers = [];
+        var answersIndex = 0;
+        var thisIsCorrectAnswer;
+
+        // if no more questions, then we're done
+        if (setNum > numSets) {
+          $instructions.hide();
+          $timer.empty();
+          $timer.hide();
+          
+          showResults();
+        }
+        else {
+
+          // restart timer
+          for (var i = 0; i < timePerLevel; i++) {
+            timerCircles[i].css(timerCircleCSS_ON);
+          }
+          timerCount = 0;
+          timer = setInterval(countDown, 1000);
+
+          // build answers
+          for (var prop in gameConfigObj['set_' + setNum]) {
+            if (prop.indexOf('answer_') === 0) {
+              answersIndex++;
+              answers.push($('<div id="' + id + '_set' + setNum + '_answer_' + answersIndex + '"></div>').appendTo('#' + answerDivId));
+              answers[answers.length - 1].html(gameConfigObj['set_' + setNum]['answer_' + answersIndex]);
+              // set styles
+              answers[answers.length - 1].css(answerBlockCSS);
+              // pick one of the three colors, in rotation if there are more than 3
+              answers[answers.length - 1].css('background-color', [answerBlock_Indigo, answerBlock_Blue, answerBlock_Green][(answers.length-1) % 3]);
+              // assign value for whether this answer is correct
+              thisIsCorrectAnswer = ('answer_' + answersIndex === gameConfigObj['set_' + setNum].correct_answer) ? true : false
+              // click handler
+              answers[answers.length - 1].off('click'); // clear any old click handlers
+              answers[answers.length - 1].click({ isCorrect: thisIsCorrectAnswer }, function (e) {
+                if (e.data.isCorrect) {
+                  updateScore(parseInt(levelScore, 10));
+                }
+                // start with new set
+                clearInterval(timer);
+                setNum++;
+                clearAndReset();
+              });
+            }
+          }
+          $question.html(gameConfigObj['set_' + setNum].question);
+          $question.show();
+          $question.animate({
+            'left': '30px',
+            'opacity': '1.0'
+          }, 'swing');
+          $answerDiv.show();
+          $answerDiv.animate({
+            'left': '516px',
+            'opacity': '1.0'
+          }, 'swing');
+        }
+      }
+
+      // instructions
+      $instructions = createElement($gameContainer, id + '_instructions');
+      $instructions.html(gameConfigObj.instructions.id);
+      $instructions.css(instructionsCSS);
+      $instructions.show();
+
+      // timer
+      $timer = createElement($gameContainer, id + '_timer');
+      for (var i = 0; i < timePerLevel; i++) {
+        timerCircles[i] = createElement($timer, id + '_timerCircle_' + i);
+        timerCircles[i].css(timerCircleCSS_ON);
+        timerCircles[i].css('background-image', 'url("'+gameConfigObj.timer.id+'")');
+      }
+      $timer.css(timerCSS);
+      $timer.show();
+
+      // Player's score and points added (scorePlus)
+      $score = createElement($gameContainer, id + '_score');
+      $score.css(scoreCSS);
+      $score.show();
+      $scorePlus = createElement($gameContainer, id + '_scorePlus');
+      $scorePlus.css(scorePlusCSS);
+      $scorePlus.hide(); // don't want to see this yet
+      updateScore(0); // just to initialize
+
+
+      // question and answer section
+      $question = createElement($gameContainer, questionDivId);
+      $question.css(questionCSS);
+      $answerDiv = createElement($gameContainer, answerDivId);
+      $answerDiv.css(answerCSS);
+
+      clearAndReset();      
+    }
+
+    //
+    function reset() {
+      clearInterval(timer);
+      totalScore = 0;
+      showIntro();
+    }
+
+    // begin gameplay from scratch
+    function start($intro) {
+      $intro.animate({
+        'left': '1000px',
+        'opacity': '0'
+      }, 'swing', function () {
+        $(this).hide();
+        play();
+      });
+      
+      
+    }
+
+    function configure() {
+      gameConfigObj = activityObj.configuration;
+
+      // game id
+      if (activityObj['@id'] !== undefined && activityObj['@id'] !== '') {
+        id = activityObj['@id']
+      }
+
+      // score to pass
+      if (gameConfigObj['@cut_score'] !== undefined && gameConfigObj['@cut_score'] !== '') {
+        cutScore = gameConfigObj['@cut_score']
+      }
+      // score per correct answer
+      if (gameConfigObj['@score_per_correct'] !== undefined && gameConfigObj['@score_per_correct'] !== '') {
+        levelScore = gameConfigObj['@score_per_correct']
+      }
+      // time per level
+      if (gameConfigObj['@time_per_level'] !== undefined && gameConfigObj['@time_per_level'] !== '') {
+        timePerLevel = parseInt(gameConfigObj['@time_per_level'], 10);
+      }
+
+      // set up intro
+      setConfigObjProp('intro');
+      setConfigObjProp('start');
+
+      // set up instructions and timer
+      setConfigObjProp('instructions');
+      setConfigObjProp('timer');
+
+      // set up game sets (questions and answers)
+      for (var si = 1; gameConfigObj['set_' + si] !== undefined; si++) {
+        numSets = si;
+        setConfigObjProp('set_' + si);
+      }
+
+      // set up results
+      setConfigObjProp('results');
+      setConfigObjProp('results_correct');
+      setConfigObjProp('results_correct_1');
+      setConfigObjProp('results_incorrect');
+      for (var ri = 1; gameConfigObj['results_incorrect_' + ri] !== undefined; ri++) {
+        numIncorrectFeedbacks = ri;
+        setConfigObjProp('results_incorrect_' + ri);
+      }
+      setConfigObjProp('tryAgain');
+      setConfigObjProp('score_text');
+
+    }
+
+    function showIntro() {
+      var introDivId = id + '_intro';
+      var startDivId = id + '_start';
+      var $intro, $startBtn;
+
+      // build intro
+      $intro = createElement($gameContainer, introDivId);
+      $intro.html(gameConfigObj.intro.id);
+      $intro.css(introCSS);
+      $intro.addClass('large');
+      $intro.show();
+      $intro.animate({
+        'left': '84px',
+        'opacity': '1.0'
+      }, 'swing');
+
+      // add button to start
+      $startBtn = $('<div id="' + startDivId + '"></div>').appendTo($intro);
+      $startBtn.html(gameConfigObj.start.textbox.id);
+      $startBtn.css(startBtnCSS);
+      $startBtn.css('background', 'url("' + gameConfigObj.start.image.id + '") 208px 2px no-repeat');
+      $startBtn.off('click'); // clear any old click handlers
+      $startBtn.click({ $intro: $intro }, function (e) {
+        start(e.data.$intro);
+      });
+
+    }
+
+    // call when ready to get started
+    function init() {
+      configure();
+      $gameContainer = $('#' + id);
+      reset();
+      /* not relevant for stand-alone demo
+      if(vm.CurrentLesson().CurrentScreen().MetaData()['@gateContinueUntilComplete'] === 'true') {
+        gated = true;
+        vm.CurrentLesson().CurrentScreen().CanMoveNext(false);
+      }
+
+      // we want to be notified when current screen changes so we can clean up
+      vm.CurrentLesson().CurrentScreen.subscribe(function () {
+        reset();
+      });
+      */
+    }
+
+    return {
+      init: init
+    }
+  };
+
+  /*********** END DECLARATIONS ************/
+
+  var queryObj = getQueryParams(queryStringDecoded);
+  var game = timedGame(queryObj);
+
+  game.init();
+
+
+  /* DEBUG */
+  console.log(queryObj);
+
+</script>
+</body>
