@@ -1,6 +1,4 @@
-# Portfolio
-
-## Work Samples
+# Ted Singdahlsen
 
 ## Work History
 * **Learning Experience Manager** at Global Knowledge, Inc. *(January 2017 – present)*
