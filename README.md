@@ -37,8 +37,7 @@
   * Developed modular development framework for Flash
   * Administered Web development server 
 * **Senior eLearning Developer** at Global Knowledge *(February 2006 – November 2007)*
-  * Responsible for developing highly-customized eLearning content and graphic UIs for high-profile 
-  * corporate clients 
+  * Responsible for developing highly-customized eLearning content and graphic UIs for Fortune 500 clients
   * Created 3D graphics for unique online learning portal
   * Recognized for achievement with "Circle of Excellence" award
 * **Web Designer/Developer** Freelance *(December 2000 – October 2008)*
