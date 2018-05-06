@@ -88,10 +88,7 @@ Shoot, edit video and create digital content
 
 ## Education
 **MFA in Electronic Arts** from Rensselaer Polytechnic Institute *(December 1997)**  
-  * Graduated with Master's degree in Electronic Arts
-  * Explored areas of interaction with technology
-  * Specialized in 3D animation, digital audio
-  * Produced live multimedia productions
+Graduated with Master's degree in Electronic Arts
   
 **BA in Music Theory & History** from University of North Carolina, Chapel Hill *(August 1993)**  
-  * Studied music composition and visual art
+Studied music composition and visual art
