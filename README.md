@@ -32,45 +32,43 @@ Developed custom eLearning UIs and video player capabilities
 
 ## Work History
 **Learning Experience Manager** at Global Knowledge, Inc. *(January 2017 – present)**  
-  * Focus on digital products definition, strategy for consistent and effective learner experiences
+Focus on digital products definition, strategy for consistent and effective learner experiences
   
 **Senior Learning Architect** at Global Knowledge, Inc. *(July 2014 – January 2017)**  
-  * Develop learning product strategies, drive innovation, clarify and communicate business requirements
-  * Received “Circle of Excellence” award for outstanding contribution 2015
+Develop learning product strategies, drive innovation, clarify and communicate business requirements (Received “Circle of Excellence” award for outstanding contribution)
   
 **Learning Solutions Architect** at Castle Worldwide *(January 2013 – July 2014)**  
-  * Responsible for eLearning design, creation, delivery process strategies, plus research and management of learning technologies and user experience
+Responsible for eLearning design, creation, delivery process strategies, plus research and management of learning technologies and user experience
   
 **Software Engineer** at Castle Worldwide *(August 2012 – December 2012)**  
-  * Maintain (and develop features for) proprietary learning content delivery system in multiple languages
+Maintain (and develop features for) proprietary learning content delivery system in multiple languages
   
 **Senior Educational Technologist** at Allscsripts *(July 2010 – August 2012)**  
-  * Responsible for projects related to Web projects and front-end development, requiring expertise with eLearning, Web media technologies, user experience
+Responsible for projects related to Web projects and front-end development, requiring expertise with eLearning, Web media technologies, user experience
   
 **Multimedia Technology Manager** at Global Knowledge *(November 2007 – July 2010)**  
-  * Oversee eLearning content, UI, and custom coding and graphic development
+Oversee eLearning content, UI, and custom coding and graphic development
   
 **Senior eLearning Developer** at Global Knowledge *(February 2006 – November 2007)**  
-  * Responsible for developing highly-customized eLearning content and graphic UIs for Fortune 500 clients
-  * Recognized for achievement with "Circle of Excellence" award
+Responsible for developing highly-customized eLearning content and graphic UIs for Fortune 500 clients (Recognized for achievement with "Circle of Excellence" award)
   
 **Web Designer/Developer** Freelance *(December 2000 – October 2008)**  
-  * Develop Websites and graphics projects for various clients
+Develop Websites and graphics projects for various clients
   
 **Digital Media Instructor** at School of Communication Arts *(September 2004 – January 2006)**  
-  * Develop and teach courses in graphic design, Web design, digital audio/video, and 3D animation
+Develop and teach courses in graphic design, Web design, digital audio/video, and 3D animation
   
 **Adjunct Professor** at St. Augustine's College, Mass. College of Art, Mass. Comm. College *(January 1999 – August 2002)**  
-  * Develop and teach courses in 3D animation, multimedia, and music technology courses at college level
+Develop and teach courses in 3D animation, multimedia, and music technology courses at college level
   
 **3D Animator & Multimedia Artist** at Animation Technologies, Inc. *(December 1999 – November 2000)**  
-  * Create, edit 3D graphis for litigation support projects
+Create, edit 3D graphis for litigation support projects
   
 **3D Level Artist** at 3D Openmotion, LLC *(May 1999 – September 1999)**  
-  * Responsible for level design and asset creation for start-up video game company
+Responsible for level design and asset creation for start-up video game company
   
 **Video Editor & Production Assistant** at Myriad Productions *(December 1997 – November 1998)**  
-  * Shoot, edit video and create digital content
+Shoot, edit video and create digital content
 
 ## Expertise
 ### Soft Skills
