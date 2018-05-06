@@ -3,10 +3,13 @@
 ## Accomplishments
 **As learner experience manager**
 * Addressed the need for comprehensive online learner experience strategy by working with cross-functional teams to define vision and guidance for all learning content, which resulted in the adoption of consistent and coherent guidelines for all learning products
+
 *Also*
 * Defined Product catalogs, enhanced Learner experience, defined learning path and recommender system strategies, applied machine learning to product data for insights and guidance
+
 **As digital experience architect**
 * Led agile team to prototype innovative video presentation tools, in order to win large contract for Microsoft content development.
+
 *Also*
 * Prototyped new learning interface that combined lab work, live sessions, and asynchronous learning, plus a new lab experience
 **As software engineer**
