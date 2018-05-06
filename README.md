@@ -1,8 +1,8 @@
 # Ted Singdahlsen
 
 ## Accomplishments
-**As learner experience manager**
-> Addressed the need for comprehensive online learner experience strategy by working with cross-functional teams to define vision and guidance for all learning content, which resulted in the adoption of consistent and coherent guidelines for all learning products
+**As learner experience manager**  
+Addressed the need for comprehensive online learner experience strategy by working with cross-functional teams to define vision and guidance for all learning content, which resulted in the adoption of consistent and coherent guidelines for all learning products
 
 *Also*
 > Defined Product catalogs, enhanced Learner experience, defined learning path and recommender system strategies, applied machine learning to product data for insights and guidance
