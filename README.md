@@ -2,26 +2,22 @@
 
 ## Accomplishments
 **As learner experience manager**  
-Addressed the need for comprehensive online learner experience strategy by working with cross-functional teams to define vision and guidance for all learning content, which resulted in the adoption of consistent and coherent guidelines for all learning products
-
+Addressed the need for comprehensive online learner experience strategy by working with cross-functional teams to define vision and guidance for all learning content, which resulted in the adoption of consistent and coherent guidelines for all learning products  
 *Also*  
 Defined Product catalogs, enhanced Learner experience, defined learning path and recommender system strategies, applied machine learning to product data for insights and guidance
 
 **As digital experience architect**  
-Led agile team to prototype innovative video presentation tools, in order to win large contract for Microsoft content development.
-
+Led agile team to prototype innovative video presentation tools, in order to win large contract for Microsoft content development.  
 *Also*  
 Prototyped new learning interface that combined lab work, live sessions, and asynchronous learning, plus a new lab experience
 
 **As software engineer**  
-Enhanced the effectiveness of online training by developing features in order to deliver eLearning (over 10,000 students in multiple languages) for Fortune 500 client
-
+Enhanced the effectiveness of online training by developing features in order to deliver eLearning (over 10,000 students in multiple languages) for Fortune 500 client  
 *Also*  
 Created game-based learning using Unity game engine, created elearning development and delivery system
 
 **As educational technologist**  
-Addressed the need for an online course catalog by developing a versatile solution that could combine with several CMSs (including advanced filtering), which resulted in increased access to course content for internal and external users
-
+Addressed the need for an online course catalog by developing a versatile solution that could combine with several CMSs (including advanced filtering), which resulted in increased access to course content for internal and external users  
 *Also*  
 Developed custom eLearning UIs and video player capabilities
 ### Other Accomplishments
