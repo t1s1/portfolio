@@ -45,7 +45,7 @@ Responsible for eLearning design, creation, delivery process strategies, plus re
 **Software Engineer** at Castle Worldwide *(August 2012 – December 2012)*  
 Maintain (and develop features for) proprietary learning content delivery system in multiple languages
   
-**Senior Educational Technologist** at Allscsripts *(July 2010 – August 2012)*  
+**Senior Educational Technologist** at Allscripts *(July 2010 – August 2012)*  
 Responsible for projects related to Web projects and front-end development, requiring expertise with eLearning, Web media technologies, user experience
   
 **Multimedia Technology Manager** at Global Knowledge *(November 2007 – July 2010)*  
