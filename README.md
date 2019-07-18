@@ -1,9 +1,15 @@
 # Ted Singdahlsen
 
 ## Accomplishments
+**As Customer Success Director**  
+Created subscription learner journey, developed processes and policies from scratch 
+*Also*  
+Created first opportunity to view and analyze learner behavior, using gathered data
+
 **As learner experience manager**  
 Addressed the need for an online learner experience strategy by defining vision and guidance for the presentation of learning content  
 *Also*  
+Architected blended learning offering
 Defined Product catalogs, learning path and recommender system strategies  
 Applied machine learning to product data for insights and guidance
 
