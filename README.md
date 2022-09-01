@@ -28,6 +28,7 @@ Developed elearning development and delivery system
 Addressed the need for an online course catalog by developing a versatile solution that could combine with several CMSs (including advanced filtering), which resulted in increased access to course content for internal and external users  
 *Also*  
 Developed custom eLearning UIs and video player capabilities
+
 ### Other Accomplishments
 * Created ecommerce websites for clients, including one entirely in Japanese.
 * Designed video editing lab at Bard College
@@ -36,13 +37,16 @@ Developed custom eLearning UIs and video player capabilities
 * Designed and developed 3D trial animations for major law firms
 * Developed 3D levels and characters for innovative gaming start-up
 * Invented method for obtaining VR experience from video
-* Co-wrote and co-produced 3 albums of original electronic music
+* Co-wrote and co-produced 4 albums of original electronic music
 
 ## Work History
-**Learning Experience Manager** at Global Knowledge, Inc. *(January 2017 – present)*  
+**Technical Instructional Designer** at Red Hat *(January 2021 – present)*  
+Responsible for online-focused learning strategy, cross-functional collaboration, data-driven learning design
+
+**Learning Experience Manager** at Global Knowledge *(January 2017 – January 2021)*  
 Focus on digital products definition, strategy for consistent and effective learner experiences
   
-**Senior Learning Architect** at Global Knowledge, Inc. *(July 2014 – January 2017)*  
+**Senior Learning Architect** at Global Knowledge *(July 2014 – January 2017)*  
 Develop learning product strategies, drive innovation, clarify and communicate business requirements (Received “Circle of Excellence” award for outstanding contribution)
   
 **Learning Solutions Architect** at Castle Worldwide *(January 2013 – July 2014)*  
