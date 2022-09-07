@@ -41,7 +41,7 @@ Developed custom eLearning UIs and video player capabilities
 
 ## Work History
 **Technical Instructional Designer** at Red Hat *(January 2021 – present)*  
-Responsible for online-focused learning strategy, cross-functional collaboration, data-driven learning design
+Lead online-focused learning strategy, cross-functional collaboration, data-driven learning design
 
 **Learning Experience Manager** at Global Knowledge *(January 2017 – January 2021)*  
 Focus on digital products definition, strategy for consistent and effective learner experiences
@@ -50,7 +50,7 @@ Focus on digital products definition, strategy for consistent and effective lear
 Develop learning product strategies, drive innovation, clarify and communicate business requirements (Received “Circle of Excellence” award for outstanding contribution)
   
 **Learning Solutions Architect** at Castle Worldwide *(January 2013 – July 2014)*  
-Responsible for eLearning design, creation, delivery process strategies, plus research and management of learning technologies and user experience
+Led eLearning design, creation, delivery process strategies, plus research and management of learning technologies and user experience
   
 **Software Engineer** at Castle Worldwide *(August 2012 – December 2012)*  
 Maintain (and develop features for) proprietary learning content delivery system in multiple languages
