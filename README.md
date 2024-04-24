@@ -91,8 +91,6 @@ Shoot, edit video and create digital content
   * Adobe Premiere, After Effects, Final Cut Pro
 
 ## Education
-**MFA in Electronic Arts** from Rensselaer Polytechnic Institute *(December 1997)**  
-Graduated with Master's degree in Electronic Arts
+**MFA in Electronic Arts** from Rensselaer Polytechnic Institute *(December 1997)* 
   
-**BA in Music Theory & History** from University of North Carolina, Chapel Hill *(August 1993)**  
-Studied music composition and visual art
+**BA in Music Theory & History** from University of North Carolina at Chapel Hill *(August 1993)*  
