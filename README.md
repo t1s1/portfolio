@@ -1,46 +1,41 @@
 # Ted Singdahlsen
 
 ## Accomplishments
-**As Customer Success Director**  
-Created subscription learner journey, developed processes and policies from scratch 
-*Also*  
-Created first opportunity to view and analyze learner behavior, using gathered data
+**As Learner Experience Director**  
+- Created subscription learner journey, developed processes and policies from scratch  
+- Created first opportunity to view and analyze learner behavior, using gathered data
 
-**As learner experience manager**  
-Addressed the need for an online learner experience strategy by defining vision and guidance for the presentation of learning content  
-*Also*  
-Architected blended learning offering
-Defined Product catalogs, learning path and recommender system strategies  
-Applied machine learning to product data for insights and guidance
+**As Learner Experience Manager**  
+- Addressed the need for an online learner experience strategy by defining vision and guidance for the presentation of learning content
+- Architected blended learning offering
+- Defined Product catalogs, learning path and recommender system strategies
+- Applied machine learning to product data for insights and guidance
 
-**As digital experience architect**  
-Led agile team to develop innovative video presentation tools, to win large contract for Microsoft content development  
-*Also*  
-Prototyped new learning interface that combined lab work, live sessions, and asynchronous learning, plus improved lab experience
+**As Digital Experience Architect**  
+- Led agile team to develop innovative video presentation tools, to win large contract for Microsoft content development
+- Prototyped new learning interface that combined lab work, live sessions, and asynchronous learning, plus improved lab experience
 
-**As software engineer**  
-Enhanced the effectiveness of online training by developing features to deliver eLearning (over 10,000 students in multiple languages) for Fortune 500 client  
-*Also*  
-Created game-based learning using Unity game engine  
-Developed elearning development and delivery system
+**As Software Engineer**  
+- Enhanced the effectiveness of online training by developing features to deliver eLearning (over 10,000 students in multiple languages) for Fortune 500 client
+- Created game-based learning using Unity game engine
+- Developed elearning development and delivery system
 
 **As educational technologist**  
-Addressed the need for an online course catalog by developing a versatile solution that could combine with several CMSs (including advanced filtering), which resulted in increased access to course content for internal and external users  
-*Also*  
-Developed custom eLearning UIs and video player capabilities
+- Addressed the need for an online course catalog by developing a versatile solution that could combine with several CMSs (including advanced filtering), which resulted in increased access to course content for internal and external users
+- Developed custom eLearning UIs and video player capabilities
 
 ### Other Accomplishments
-* Created ecommerce websites for clients, including one entirely in Japanese.
-* Designed video editing lab at Bard College
-* Produced live electronic performance events
-* Taught computer animation, multimedia, and interactive media
-* Designed and developed 3D trial animations for major law firms
-* Developed 3D levels and characters for innovative gaming start-up
-* Invented method for obtaining VR experience from video
-* Co-wrote and co-produced 4 albums of original electronic music
+- Created ecommerce websites for clients, including one entirely in Japanese.
+- Designed video editing lab at Bard College
+- Produced live electronic performance events
+- Taught computer animation, multimedia, and interactive media
+- Designed and developed 3D trial animations for major law firms
+- Developed 3D levels and characters for innovative gaming start-up
+- Invented method for obtaining VR experience from video
+- Co-wrote and co-produced 4 albums of original electronic music
 
 ## Work History
-**Technical Instructional Designer** at Red Hat *(January 2021 – present)*  
+**Senior Instructional Designer** at Red Hat *(January 2021 – present)*  
 Lead online-focused learning strategy, cross-functional collaboration, data-driven learning design
 
 **Learning Experience Manager** at Global Knowledge *(January 2017 – January 2021)*  
